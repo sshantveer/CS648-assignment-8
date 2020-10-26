@@ -4,13 +4,13 @@ body {
 
 #empForm input[type="text"] {
     padding: 4px;
-    border: 1px solid #1f3063;
+    border: 1px solid #0037db;
 }
 
 input[type="button"] {
     padding: 2px 14px;
-    border: 1px solid #1f3063;
-    background-color: #8998ee;
+    border: 1px solid #0037db;
+    background-color: #03598b;
     color: #fff;
 }
 
@@ -35,11 +35,11 @@ form div {
 
 table {
     border-collapse: collapse;
-    min-width: 680px;
+    min-width: 600px;
 }
 
 th {
-    background-color: #8998ee;
+    background-color: #03598b;
     font-weight: bold;
     color: #fff;
 }
@@ -52,11 +52,11 @@ th, td {
 }
 
 tr:nth-child(even) {
-    background-color: #D2DEEF;
+    background-color: #d5dde9;
 }
 
 tr:nth-child(odd) {
-    background-color: #EAEFF7;
+    background-color: #e3e7ee;
 }
 
 .deleteCell {

@@ -61,28 +61,26 @@ function updateEmployeeCount() {
     $("empCount").innerHTML = employees.length;
 }
 
-var addEmployeeForm = function () {
+var addEmployeeToTable = function () {
     "use strict";
-
-    let message = "";
-    let msg = "All fields are required!";
+    let isError = false;
     var name = $("name").value;
     var title = $("title").value;
     let extension = $("extension").value;
 
     if (name === "") {
         $("errorName").innerHTML = "Please enter a name.";
-        message = msg;
+        isError = true;
     }
     if (title === "") {
         $("errorTitle").innerHTML = "Please enter a title.";
-        message = msg;
+        isError = true;
     }
     if (extension === "") {
         $("errorExtension").innerHTML = "Please enter an extension.";
-        message = msg;
+        isError = true;
     }
-    if (message !== msg) {
+    if (isError !== true) {
         $("errorName").innerHTML = "";
         $("errorTitle").innerHTML = "";
         $("errorExtension").innerHTML = "";
@@ -97,5 +95,5 @@ var addEmployeeForm = function () {
 window.addEventListener("load", function () {
     "use strict";
     display();
-    $("add").addEventListener("click", addEmployeeForm);
+    $("add").addEventListener("click", addEmployeeToTable);
 });
